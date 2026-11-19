@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caronte — Privacy</title>
+<style>
+body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; color: #1d1d1f; max-width: 680px; margin: 40px auto; padding: 0 16px; line-height: 1.6; }
+h1 { font-size: 26px; margin-bottom: 4px; } h2 { font-size: 18px; margin-top: 32px; }
+.data { color: #6e6e73; margin-top: 0; }
+</style>
+</head>
+<body>
+<h1>Caronte — Informativa sulla privacy</h1>
+<p class="data">Aggiornata il 19/11/2026</p>
+
+<p>Caronte è un'estensione per Google Chrome che crea sottotitoli in italiano per i video che stai guardando. Non ha un server suo e non raccoglie dati per chi l'ha sviluppata.</p>
+
+<h2>Cosa esce dal tuo computer</h2>
+<p>Solo quando premi «Traduci in italiano» su un video:</p>
+<ul>
+<li>l'<b>audio</b> di quel video va a <b>Groq</b> (api.groq.com), che lo trascrive;</li>
+<li>il <b>testo trascritto</b> e il titolo del video vanno a <b>Google Gemini</b> (generativelanguage.googleapis.com), che lo traduce. Se Gemini non risponde, la traduzione passa a Groq.</li>
+</ul>
+<p>Le richieste partono con le chiavi che hai inserito tu e seguono le condizioni di quei servizi: <a href="https://groq.com/privacy-policy/">privacy di Groq</a>, <a href="https://ai.google.dev/gemini-api/terms">condizioni dell'API Gemini</a>.</p>
+<p>Nient'altro esce: niente cronologia, niente pagine visitate, niente dati personali. Se non premi il pulsante, Caronte non manda niente a nessuno.</p>
+
+<h2>Cosa resta sul tuo computer</h2>
+<p>Nella memoria di Chrome (<code>chrome.storage.local</code>) restano le due chiavi e i sottotitoli già fatti, così un video riaperto li ha subito. Li cancelli dalla pagina delle impostazioni di Caronte, o togliendo l'estensione.</p>
+
+<h2>Perché chiede accesso ai siti</h2>
+<p>I video di medicina stanno su molti siti diversi. Caronte deve poter vedere il video della pagina per mostrare il pulsante e leggerne l'audio quando lo chiedi. Se il server del video blocca la lettura, Caronte la consente solo a quella pagina e solo per quel server, fino alla chiusura del browser. Non legge né modifica nient'altro delle pagine.</p>
+
+<h2>Cosa non fa</h2>
+<ul>
+<li>Non vende né cede dati a nessuno.</li>
+<li>Non usa i dati per pubblicità o profilazione.</li>
+<li>Non usa i dati per scopi diversi dai sottotitoli.</li>
+</ul>
+
+<h2>Contatti</h2>
+<p>Per domande, scrivi all'indirizzo indicato nella scheda di Caronte sul Chrome Web Store.</p>
+
+<hr>
+<p><b>English summary.</b> Caronte creates Italian subtitles for the video you are watching. Only when you press the button, the video's audio is sent to Groq for transcription and the transcript to Google Gemini for translation, using API keys you provide. Keys and finished subtitles are stored locally in Chrome. No other data is collected, sold, or shared, and there is no server of ours.</p>
+</body>
+</html>
